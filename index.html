@@ -69,19 +69,16 @@
 
       <!-- tweetbox starts -->
       <div class="tweetBox">
-        <form>
+        <form action="" method="POST">
           <div class="tweetbox__input">
-            <img
-              src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
-              alt=""
-            />
-            <input type="text" placeholder="What's happening?" />
+            <img src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png" alt="">
+            <input type="text" name="tweettext" placeholder="What's happening?" />
           </div>
-          <button class="tweetBox__tweetButton">Tweet</button>
+          <input type="submit" class="tweetBox__tweetButton" style="cursor: pointer" name="tweetButton" value="Tweet" />
         </form>
       </div>
       <!-- tweetbox ends -->
-      <?php foreach($arraytweets['tweets'] as $tweet) : ?>
+      <?php foreach($arrayTweets['tweets'] as $tweet) : ?>
       <!-- post starts -->
       <div class="post">
         <div class="post__avatar">
